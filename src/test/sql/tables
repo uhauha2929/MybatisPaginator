@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+`id` integer PRIMARY KEY autoincrement,
+`username` varchar(32) DEFAULT NULL ,
+`password` varchar(32) DEFAULT NULL ,
+`user_sex` varchar(32) DEFAULT NULL,
+`nickname` varchar(32) DEFAULT NULL
+);

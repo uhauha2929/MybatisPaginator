@@ -1,0 +1,26 @@
+server:
+  port: 18083
+  servlet:
+    session:
+      timeout: 60
+
+spring:
+  datasource:
+    url: jdbc:sqlite:C:\\Users\\work\\test.db
+    username:
+    password:
+    driver-class-name: org.sqlite.JDBC
+
+# MyBatis配置
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.suzhoubank.mybatispaginator.pojo
+  configuration:
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+
+# 分页插件
+pagehelper:
+  auto-dialect: true
+  reasonable: true
+
